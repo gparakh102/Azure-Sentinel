@@ -18,7 +18,7 @@ The primary objective was to extract valuable insights into the origins of these
 <h2>Practical lab walk-through:</h2>
 
 <p>
-<h3><b>Sections: </b></h3><br/>
+<h3><b>Sections:- </b></h3>
 <h4><b>1. Set up Azure account</b></h4>
 <h4><b>2. Create a Virtual machine</b></h4>
     <h5><i>Steps to create VM:</i></h5>
