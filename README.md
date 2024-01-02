@@ -45,37 +45,59 @@ Every new user is given $200 worth of free credits which is to be used to comple
 <br />
 <br />
 In the subsequent step, a virtual machine will be generated; navigate to the search bar and input "virtual machine." It is imperative to note that this machine will intentionally be kept vulnerable and be accessible on the internet, rendering it susceptible to external attacks from individuals.
+<br /><br />
+2: Create a Virtual machine<br/>
+Steps to create VM:<br />
+(i)	Resource Group: Create a new resource and give it a name (Honeypot_lab in this case)
+<img src="https://i.postimg.cc/W46HQWKw/2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Step 2: Now click on "Change adapter options"<br/>
-<img src="https://i.postimg.cc/zG1KxqPx/7.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+(ii)	Virtual machine name: Honeypot <br />
+(iii)	Region: (US) West US 3<br />
+(iv)	Image: Select the Windows 10 Pro version<br />
+<img src="https://i.postimg.cc/tTqMydGQ/3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
+(v)     Administrator Account<br />
+Username: g-admin<br />
+Password: *************<br />
+-	These are credentials of the virtual machine when attempting to login<br />
+Select inbound port: RDP (3309)<br />
+        Click on <b><i>Next : Disks > </i></b><br />
+<img src="https://i.postimg.cc/T1hN5RPt/4.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
-Step 3: Change the names of the below adapters to _INTERNET and X_INTERNAL_X to differentiate between the Main controller and client<br/>
-<img src="https://i.postimg.cc/prhz6rH6/8.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Step 4: Click on the Internal network properties, and go to Internet protocol version 4 to change the IP address and add loopback address as shown below:<br/>
-<img src="https://i.postimg.cc/h4697L8W/9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.postimg.cc/1tTNwSqc/10.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/50sktHfH/5.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br/>
-<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Step 5: Rename the PC to DC for convenience. Click on System<br/>
 <img src="https://i.postimg.cc/cH6nvCrL/11.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <img src="https://i.postimg.cc/ZndvLQPk/12.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
