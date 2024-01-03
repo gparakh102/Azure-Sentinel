@@ -29,7 +29,7 @@ The primary objective was to extract valuable insights into the origins of these
 <h3><b>6. Open virtual machine</b></h3>
     <h4><i>wf.msc</i></h4>
 <h3><b>7. Log Analytics</b></h3>
-    <h4><i>Create the Custom Logs</i></h4>
+    <h4><i>Create Custom Logs</i></h4>
 <h3><b>8. Logs Query</b></h3>
 <h3><b>9. Maps in Azure</b></h3>
     <h4><i>Create Workbook</i></h4>
@@ -116,13 +116,28 @@ There will be no response as windows firewall on the VM is blocking ICMP packets
 -	To simulate a failed login attempt, initiate an attempt to log in via RDP from the main computer, deliberately entering incorrect username and password credentials. Subsequently, access the Event Viewer, specifically the Security log, and filter the log using Event ID.<br />
 -	The displayed information will include Event ID 4625 (Failed Logon) along with details such as the attempted account username. Notably, the location is not explicitly mentioned; only the IP address is known at this stage. Subsequent steps will involve exploring methods to map the IP address to a geolocation for further analysis.<br /><br />
 <b>Steps:</b><br />
-1.	On the VM and search Windows Powershell ISE as administrator<br />
-2.	Copy the <a href="https://github.com/gparakh102/Azure-Sentinel/blob/main/Sentinel%20Powershell%20script.txt">script</a> and paste in powershell ISE
-
-
-
-
-
+(i) On the VM and search Windows Powershell ISE as administrator<br />
+(ii) Copy the <a href="https://github.com/gparakh102/Azure-Sentinel/blob/main/Sentinel%20Powershell%20script.txt">script</a> and paste in powershell ISE<br />
+<img src="https://i.postimg.cc/hvsm7LQJ/18.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+(iii) The API key is going to be different for each person, and to get it, sign up at <a href="https://ipgeolocation.io/">ipgeolocation</a> and you immediately get API key<br />
+The image below is my custom API key.
+<img src="https://i.postimg.cc/858L8PVC/19.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+(iv)Once the custom API Key is obtained, replace API key in script as in image.
+<img src="https://i.postimg.cc/DfPLDTp2/20.png" height="20%" width="30%" alt="Disk Sanitization Steps"/><br/<br/>
+(v) Save script on desktop and run it<br />
+Output. (Text in purple indicates failed login attempts to the VM)<br />
+<img src="https://i.postimg.cc/y8tZ9YxT/21.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+(vi) The location where logs are stored from script is hidden, so have to go manually through Run (choose 1st option in image)<br />
+<img src="https://i.postimg.cc/Nj5X5rsM/22.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+(vii) “failed_rdp” is name of the file where the logs are stored<br />
+<img src="https://i.postimg.cc/bvn2Rc2f/23.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+(viii) Copy logs from VM to notepad in local machine and save<br />
+<img src="https://i.postimg.cc/rmLRnnS0/24.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
+<h3><b>7: Log Analytics</b></h3><br />
+<h4>Create Custom Logs</h4><br />
+(i) Search the log analytics workspace on local machine in Azure<br />
+(ii) Select LAW-Honeypot_lab, and search tables<br />
+(iii) There, Create > New custom log (MMA-based)<br />
 
 
 
