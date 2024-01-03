@@ -36,7 +36,7 @@ The primary objective was to extract valuable insights into the origins of these
 
 <br/><br/><br/>
  
-1: Set up Azure account
+<h3>1: Set up Azure account</h3>
 <br/>
 Link : <a href="https://azure.microsoft.com/en-us/free/">Azure Trial</a><br />
 Every new user is given $200 worth of free credits which is to be used to complete this project. After project completion, the resources must be removed to ensure no unnecessary charges are incurred.
@@ -46,8 +46,8 @@ Every new user is given $200 worth of free credits which is to be used to comple
 <br />
 In the subsequent step, a virtual machine will be generated; navigate to the search bar and input "virtual machine." It is imperative to note that this machine will intentionally be kept vulnerable and be accessible on the internet, rendering it susceptible to external attacks from individuals.
 <br /><br />
-2: Create a Virtual machine<br/>
-Steps to create VM:<br />
+<h3>2: Create a Virtual machine</h3><br/>
+<h4>Steps to create VM:</h4><br />
 (i)	Resource Group: Create a new resource and give it a name (Honeypot_lab in this case)
 <img src="https://i.postimg.cc/W46HQWKw/2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
@@ -57,22 +57,32 @@ Steps to create VM:<br />
 <img src="https://i.postimg.cc/tTqMydGQ/3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 (v)     Administrator Account<br />
+These are credentials of the virtual machine when attempting to login (You can set them up as anything)<br />
 Username: g-admin<br />
 Password: *************<br />
--	These are credentials of the virtual machine when attempting to login<br />
-Select inbound port: RDP (3309)<br />
-        Click on <b><i>Next : Disks > </i></b><br />
+Select inbound port: RDP (3309)<br /><br />
+(vi) Click on <b><i>Next : Disks > </i></b><br />
 <img src="https://i.postimg.cc/T1hN5RPt/4.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <img src="https://i.postimg.cc/50sktHfH/5.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br/>
-
-
-
-
-
-
-
+<br/>
+(vii) Leave everything as default and go to <br />
+<b><i>Next : Networking > NIC network security group > Advanced > Configure network security group > Create new</i></b>
+<img src="https://i.postimg.cc/nrxWX1fb/6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+(viii) Remove the existing inbound rules and Create default Allow Rule as per the image, for all traffic from any source, allowing anyone access to it as it is a honeypot.
+<img src="https://i.postimg.cc/MZ04hg1W/7.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<br />
+(ix) <b><i>Add > Review + Create > Create</i></b>
+<br/>
+<br />
+<h3>Log Analytics Workspaces</h3><br/>
+<h4>Steps to create a log Analytics Workspace:</h4><br />
+- Search log analytics workspaces in the search bar.<br/>
+    -	This is used to link the virtual machine logs in windows event viewer to azure logs.<br/> 
+    -	This will also be used to create custom logs and map their geo location data.<br/>
+ (i) Create log analytics workspace by clicking on <b><i>Create</i></b><br />
+<img src="https://i.postimg.cc/VL9FsbRM/8.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 
