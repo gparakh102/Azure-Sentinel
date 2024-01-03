@@ -111,13 +111,13 @@ There will be no response as windows firewall on the VM is blocking ICMP packets
 <img src="https://i.postimg.cc/ncVBfPNq/16.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
 (ii) It is working now, as the ping request from local machine to VM is being replied to now.
 <img src="https://i.postimg.cc/G2kGbwcx/17.png" height="60%" width="60%" alt="Disk Sanitization Steps"/><br/<br/>
--	Subsequently, locate the Event Viewer within the VM. Within the Event Viewer, navigate to Custom logs, Windows logs, and Application and Services logs, specifically focusing on the Windows Log categories such as Application, Security, Setup, System, and Forwarded Events.
--	Within the Security event logs, examine login attempt logs, including failed and successful logins, among other logs. The primary emphasis should be on Event ID 4625, denoting a failed login attempt. Filter the logs to scrutinize and identify failed attempts. Given that the machine is now exposed to the external environment, it is expected that individuals will attempt to perform unauthorized logins.
--	To simulate a failed login attempt, initiate an attempt to log in via RDP from the main computer, deliberately entering incorrect username and password credentials. Subsequently, access the Event Viewer, specifically the Security log, and filter the log using Event ID.
--	The displayed information will include Event ID 4625 (Failed Logon) along with details such as the attempted account username. Notably, the location is not explicitly mentioned; only the IP address is known at this stage. Subsequent steps will involve exploring methods to map the IP address to a geolocation for further analysis.
-<b>Steps:</b>
-1.	On the VM and search Windows Powershell ISE as administrator
-2.	Copy script and paste in powershell ISE
+-	Subsequently, locate the Event Viewer within the VM. Within the Event Viewer, navigate to Custom logs, Windows logs, and Application and Services logs, specifically focusing on the Windows Log categories such as Application, Security, Setup, System, and Forwarded Events.<br />
+-	Within the Security event logs, examine login attempt logs, including failed and successful logins, among other logs. The primary emphasis should be on Event ID 4625, denoting a failed login attempt. Filter the logs to scrutinize and identify failed attempts. Given that the machine is now exposed to the external environment, it is expected that individuals will attempt to perform unauthorized logins.<br />
+-	To simulate a failed login attempt, initiate an attempt to log in via RDP from the main computer, deliberately entering incorrect username and password credentials. Subsequently, access the Event Viewer, specifically the Security log, and filter the log using Event ID.<br />
+-	The displayed information will include Event ID 4625 (Failed Logon) along with details such as the attempted account username. Notably, the location is not explicitly mentioned; only the IP address is known at this stage. Subsequent steps will involve exploring methods to map the IP address to a geolocation for further analysis.<br /><br />
+<b>Steps:</b><br />
+1.	On the VM and search Windows Powershell ISE as administrator<br />
+2.	Copy the <a href="https://github.com/gparakh102/Azure-Sentinel/blob/main/Sentinel%20Powershell%20script.txt">script</a> and paste in powershell ISE
 
 
 
