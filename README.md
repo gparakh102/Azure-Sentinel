@@ -53,7 +53,7 @@ In the subsequent step, a virtual machine will be generated; navigate to the sea
 (ii)	Virtual machine name: Honeypot <br />
 (iii)	Region: (US) West US 3<br />
 (iv)	Image: Select the Windows 10 Pro version<br />
-
+<img src="https://i.postimg.cc/tTqMydGQ/3.png" height="50%" width="50%" alt="Steps"/><br />
 (v)     Administrator Account<br />
 These are credentials of the virtual machine when attempting to login (You can set them up as anything)<br />
 Username: g-admin<br />
@@ -68,7 +68,7 @@ Select inbound port: RDP (3309)<br /><br />
 (vii) Leave everything as default and go to <br />
 <b><i>Next : Networking > NIC network security group > Advanced > Configure network security group > Create new</i></b>
 <img src="https://i.postimg.cc/nrxWX1fb/6.png" height="50%" width="50%" alt="Steps"/><br/<br/>
-(viii) Remove the existing inbound rules and Create default Allow Rule as per the image, for all traffic from any source, allowing anyone access to it as it is a honeypot.
+(viii) Remove the existing inbound rules and Create default Allow Rule as per the image, for all traffic from any source, allowing anyone access to it as it is a honeypot.<br/>
 <img src="https://i.postimg.cc/MZ04hg1W/7.png" height="40%" width="40%" alt="Steps"/>
 <br />
 (ix) <b><i>Add > Review + Create > Create</i></b>
