@@ -53,8 +53,7 @@ In the subsequent step, a virtual machine will be generated; navigate to the sea
 (ii)	Virtual machine name: Honeypot <br />
 (iii)	Region: (US) West US 3<br />
 (iv)	Image: Select the Windows 10 Pro version<br />
-<img src="https://i.postimg.cc/tTqMydGQ/3.png" height="50%" width="50%" alt="Steps"/>
-<br />
+
 (v)     Administrator Account<br />
 These are credentials of the virtual machine when attempting to login (You can set them up as anything)<br />
 Username: g-admin<br />
