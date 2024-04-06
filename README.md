@@ -58,7 +58,7 @@ In the subsequent step, a virtual machine will be generated; navigate to the sea
 These are credentials of the virtual machine when attempting to login (You can set them up as anything)<br />
 Username: g-admin<br />
 Password: *************<br />
-Select inbound port: RDP (3309)<br /><br />
+Select inbound port: RDP (3389)<br /><br />
 (vi) Click on <b><i>Next : Disks > </i></b><br />
 <img src="https://i.postimg.cc/T1hN5RPt/4.png" height="50%" width="50%" alt="Steps"/>
 <br />
