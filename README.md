@@ -1,4 +1,4 @@
-<h1>Basic Home Lab Running Active Directory</h1>
+<h1>Azure Sentinel map with live cyber attacks</h1>
 
 <h2>Description</h2>
 The focal point of this project was the deployment of Azure Sentinel to monitor unsuccessful remote desktop login attempts. The approach involved the use of a PowerShell script, designed to interface with an API for fetching location data associated with the respective IP addresses linked to these failed login attempts. Subsequently, this location data was meticulously mapped to provide an insightful visual representation of the attempted security breaches. <br/><br/>
